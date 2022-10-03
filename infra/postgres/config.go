@@ -9,7 +9,7 @@ import (
 )
 
 func Init() *gorm.DB {
-	dbURL := "postgres://docker:admin@db/app"
+	dbURL := "postgres://docker:admin@database_api/apidb"
 
 	db, err := gorm.Open(postgres.Open(dbURL), &gorm.Config{})
 

@@ -2,9 +2,6 @@ FROM golang:alpine as builder
 
 # ENV GO111MODULE=on
 
-# Add Maintainer info
-LABEL maintainer="Steven Victor <chikodi543@gmail.com>"
-
 # Install git.
 # Git is required for fetching the dependencies.
 RUN apk update && apk add --no-cache git
@@ -34,7 +31,7 @@ WORKDIR /root/
 COPY --from=builder /app/main .    
 
 # Expose port 8080 to the outside world
-EXPOSE 3333
+EXPOSE 3000
 
 #Command to run the executable
 CMD ["./main"]
