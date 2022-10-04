@@ -16,6 +16,9 @@ func main() {
 	userHandler := setupUserHandler()
 	e.POST("/users", userHandler.CreateUser)
 	e.GET("/users", userHandler.FindAllUser)
+	e.GET("/users/:id", userHandler.FindUser)
+	e.PUT("/users/:id", userHandler.UpdateUser)
+	e.DELETE("/users/:id", userHandler.DeleteUser)
 
 	println("Server is Running!")
 	e.Logger.Fatal(e.Start(":3000"))

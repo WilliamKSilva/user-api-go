@@ -19,7 +19,7 @@ func (u *UserUseCase) Create(user *entities.User) (*entities.User, error) {
 	return user, nil
 }
 
-func (u *UserUseCase) Find(id uint) (*entities.User, error) {
+func (u *UserUseCase) Find(id uint) (entities.User, error) {
 	user, err := u.UserRepository.Find(id)
 
 	if err != nil {

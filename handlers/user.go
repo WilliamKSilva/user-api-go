@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"fmt"
 	"net/http"
 	"strconv"
 
@@ -41,8 +40,6 @@ func (u *UserHandler) FindUser(c echo.Context) error {
 
 	converted_id, convert_error := strconv.ParseUint(id, 0, 64)
 
-	fmt.Println(converted_id)
-
 	if convert_error != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, convert_error.Error())
 	}
@@ -51,6 +48,10 @@ func (u *UserHandler) FindUser(c echo.Context) error {
 
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	if user.Name == "" {
+		return c.JSON(http.StatusBadRequest, "User does not exist!")
 	}
 
 	return c.JSON(http.StatusOK, user)
