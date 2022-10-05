@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/WilliamKSilva/unit-tests-go/application/entities"
-	usecases "github.com/WilliamKSilva/unit-tests-go/application/usecases/user"
+	"github.com/WilliamKSilva/user-api-go/application/entities"
+	usecases "github.com/WilliamKSilva/user-api-go/application/usecases/user"
 	"github.com/labstack/echo/v4"
 )
 

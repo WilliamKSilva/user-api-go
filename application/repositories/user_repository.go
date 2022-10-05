@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/WilliamKSilva/unit-tests-go/application/entities"
+	"github.com/WilliamKSilva/user-api-go/application/entities"
 	"gorm.io/gorm"
 )
 

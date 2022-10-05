@@ -1,4 +1,4 @@
-module github.com/WilliamKSilva/unit-tests-go
+module github.com/WilliamKSilva/user-api-go
 
 go 1.16
 

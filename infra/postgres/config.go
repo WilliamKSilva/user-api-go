@@ -3,7 +3,7 @@ package postgres
 import (
 	"log"
 
-	"github.com/WilliamKSilva/unit-tests-go/application/entities"
+	"github.com/WilliamKSilva/user-api-go/application/entities"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

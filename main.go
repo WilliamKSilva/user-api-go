@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/WilliamKSilva/unit-tests-go/application/repositories"
-	usecases "github.com/WilliamKSilva/unit-tests-go/application/usecases/user"
-	"github.com/WilliamKSilva/unit-tests-go/handlers"
-	"github.com/WilliamKSilva/unit-tests-go/infra/postgres"
+	"github.com/WilliamKSilva/user-api-go/application/repositories"
+	usecases "github.com/WilliamKSilva/user-api-go/application/usecases/user"
+	"github.com/WilliamKSilva/user-api-go/handlers"
+	"github.com/WilliamKSilva/user-api-go/infra/postgres"
 	"github.com/labstack/echo/v4"
 )
 

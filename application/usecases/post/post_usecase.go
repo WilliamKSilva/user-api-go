@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	"github.com/WilliamKSilva/unit-tests-go/application/entities"
-	"github.com/WilliamKSilva/unit-tests-go/application/repositories"
+	"github.com/WilliamKSilva/user-api-go/application/entities"
+	"github.com/WilliamKSilva/user-api-go/application/repositories"
 )
 
 type PostUseCase struct {
