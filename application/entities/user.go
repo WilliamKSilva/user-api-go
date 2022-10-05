@@ -7,11 +7,5 @@ type User struct {
 	Name     string `json:"name"`
 	Email    string `json:"email"`
 	Password string `json:"password"`
-	Posts    []Post
-}
-
-type Post struct {
-	gorm.Model
-	UserID      uint   `json:"userId"`
-	Description string `json:"description"`
+	Posts    []Post `gorm:"foreignKey:userId`
 }

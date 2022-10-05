@@ -5,7 +5,7 @@ import (
 	"strconv"
 
 	"github.com/WilliamKSilva/unit-tests-go/application/entities"
-	"github.com/WilliamKSilva/unit-tests-go/application/usecases"
+	usecases "github.com/WilliamKSilva/unit-tests-go/application/usecases/user"
 	"github.com/labstack/echo/v4"
 )
 
